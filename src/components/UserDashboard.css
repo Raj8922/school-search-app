@@ -1,0 +1,486 @@
+/* UserDashboard Enhanced Styles */
+
+.dashboard-container {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+/* Custom Tabs */
+.custom-tabs .nav-link {
+  border: none;
+  border-radius: 12px;
+  margin-right: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  color: #6c757d;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.custom-tabs .nav-link:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.custom-tabs .nav-link.active {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.tab-title {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+/* Welcome Card */
+.welcome-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.welcome-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.welcome-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+}
+
+/* Profile Card */
+.profile-card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.custom-progress {
+  height: 8px;
+  border-radius: 10px;
+  background: #e9ecef;
+}
+
+.custom-progress .progress-bar {
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+/* Stats Cards */
+.stats-card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.stats-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stats-icon {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Insights Card */
+.insights-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.insights-header {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+  color: white;
+  border: none;
+  padding: 1.5rem;
+  font-weight: 600;
+}
+
+.insight-alert {
+  border-radius: 12px;
+  background: linear-gradient(135deg, #d1ecf1, #bee5eb);
+  border: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Recommendations Section */
+.recommendations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.recommendations-icon {
+  background: linear-gradient(135deg, #ffc107, #ff8f00);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Recommendation Cards */
+.recommendation-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.top-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 3;
+}
+
+.top-badge-content {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+}
+
+.score-badge-content {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.school-image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.school-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.recommendation-card:hover .school-image {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), transparent);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.recommendation-card:hover .image-overlay {
+  opacity: 1;
+}
+
+.favorite-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.school-title {
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: #2c3e50;
+}
+
+.school-location {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.school-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.match-reasons {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.match-reason-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.match-reason-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Section Headers */
+.favorites-header,
+.searches-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.favorites-icon,
+.searches-icon {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searches-icon {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+/* Search Cards */
+.search-card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-number .badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.search-details {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.search-timestamp {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 1px solid #dee2e6;
+  margin-top: 0.5rem;
+}
+
+/* Empty State Cards */
+.card .card-body.text-center {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem 0;
+  }
+  
+  .recommendations-header,
+  .favorites-header,
+  .searches-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .custom-tabs .nav-link {
+    margin-right: 0.25rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .tab-title {
+    font-size: 0.85rem;
+  }
+  
+  .welcome-card .card-body {
+    padding: 3rem 2rem;
+  }
+  
+  .welcome-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .welcome-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .dashboard-container {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+[data-theme="dark"] .stats-card,
+[data-theme="dark"] .profile-card,
+[data-theme="dark"] .recommendations-header,
+[data-theme="dark"] .favorites-header,
+[data-theme="dark"] .searches-header {
+  background: #34495e;
+  color: #ecf0f1;
+}
+
+[data-theme="dark"] .recommendation-card,
+[data-theme="dark"] .search-card {
+  background: #34495e;
+  color: #ecf0f1;
+}
+
+[data-theme="dark"] .school-title {
+  color: #ecf0f1;
+}
+
+[data-theme="dark"] .match-reasons,
+[data-theme="dark"] .search-details {
+  background: #2c3e50;
+}
+
+[data-theme="dark"] .match-reason-item {
+  color: #bdc3c7;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recommendation-card,
+.stats-card,
+.profile-card,
+.search-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.recommendation-card:nth-child(1) { animation-delay: 0.1s; }
+.recommendation-card:nth-child(2) { animation-delay: 0.2s; }
+.recommendation-card:nth-child(3) { animation-delay: 0.3s; }
+.recommendation-card:nth-child(4) { animation-delay: 0.4s; }
+.recommendation-card:nth-child(5) { animation-delay: 0.5s; }
+.recommendation-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Smooth transitions for all interactive elements */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.badge {
+  transition: all 0.3s ease;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.nav-link:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+} 

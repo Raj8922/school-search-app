@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body, #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f7f9fb;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #222;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root > div {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, .display-5, .navbar-brand {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Add some fun shadow and rounded corners to cards */
+.card {
+  border-radius: 1rem !important;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  border: none;
+}
+
+/* Colorful buttons */
+.btn-primary, .btn-outline-primary {
+  background: #2563eb;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: background 0.2s, transform 0.1s;
+}
+.btn-primary:hover, .btn-outline-primary:hover {
+  background: #1e40af;
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Navbar fun */
+.navbar-brand {
+  color: #2563eb !important;
+  font-size: 1.7rem !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Add a little bounce to cards on hover */
+.card:hover {
+  box-shadow: 0 6px 24px 0 rgba(37,99,235,0.10);
+  transform: translateY(-4px) scale(1.01);
+  transition: 0.2s;
+}
+
+footer {
+  border-top: 1px solid #e5e7eb;
+  background: #fff !important;
+  color: #222 !important;
+  flex-shrink: 0;
+}
+
+.fade-in {
+  animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (max-width: 767px) {
+  .compare-search-card .row > div {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.school-marker-animate {
+  animation: popIn 0.7s cubic-bezier(.4,2,.3,1);
+}
+@keyframes popIn {
+  from { transform: scale(0.5); opacity:0; }
+  to { transform: scale(1); opacity:1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.favorites-modal .modal-content {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.favorites-modal .modal-header {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.favorites-modal .modal-body {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.filter-modal .modal-content {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.filter-modal .modal-header {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.filter-modal .modal-body {
+  border-radius: 0 0 1rem 1rem;
 }

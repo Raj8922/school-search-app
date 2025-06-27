@@ -1,0 +1,49 @@
+.animated-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.18;
+  filter: blur(2px);
+  animation: rotate 20s linear infinite;
+}
+.shape1 {
+  width: 300px; height: 300px;
+  background: linear-gradient(135deg, #ff8a00 0%, #e52e71 100%);
+  top: 5%; left: 10%;
+  animation-duration: 22s;
+}
+.shape2 {
+  width: 200px; height: 200px;
+  background: linear-gradient(135deg, #43c6ac 0%, #f8ffae 100%);
+  top: 60%; left: 70%;
+  animation-duration: 18s;
+}
+.shape3 {
+  width: 180px; height: 180px;
+  background: linear-gradient(135deg, #e52e71 0%, #43c6ac 100%);
+  top: 30%; left: 80%;
+  animation-duration: 25s;
+}
+.shape4 {
+  width: 120px; height: 120px;
+  background: linear-gradient(135deg, #f8ffae 0%, #ff8a00 100%);
+  top: 80%; left: 20%;
+  animation-duration: 16s;
+}
+.shape5 {
+  width: 250px; height: 250px;
+  background: linear-gradient(135deg, #43c6ac 0%, #e52e71 100%);
+  top: 50%; left: 40%;
+  animation-duration: 30s;
+}
+@keyframes rotate {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+} 
