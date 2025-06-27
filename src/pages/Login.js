@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Form, Button, Alert } from 'react-bootstrap';
-import { FaSignInAlt, FaUser, FaLock, FaGoogle, FaFacebook, FaBrain, FaRocket, FaShieldAlt, FaLightbulb } from 'react-icons/fa';
+import { FaSignInAlt, FaUser, FaLock, FaBrain, FaRocket, FaShieldAlt, FaLightbulb } from 'react-icons/fa';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Button, Badge, ProgressBar, Alert, Table, Modal, ToggleButtonGroup, ToggleButton } from 'react-bootstrap';
-import { FaStar, FaHeart, FaChartBar, FaBalanceScale, FaTrophy, FaRupeeSign, FaMapMarkerAlt, FaGraduationCap, FaUsers, FaClock, FaPlus, FaTrash, FaCog } from 'react-icons/fa';
+import { FaStar, FaHeart, FaChartBar, FaBalanceScale, FaTrophy, FaRupeeSign, FaMapMarkerAlt, FaGraduationCap, FaUsers, FaClock, FaPlus, FaTrash } from 'react-icons/fa';
 import { generateSchoolComparison } from '../utils/recommendationEngine';
 
 const AdvancedCompare = () => {
