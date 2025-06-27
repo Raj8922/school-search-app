@@ -274,8 +274,8 @@ const SchoolCard = ({ school, showToast = true }) => {
           <div className="position-absolute top-50 start-50 translate-middle" style={{zIndex: 10}}>
             <div className="text-danger" style={{fontSize: '3rem', animation: 'heartBeat 1s ease-in-out'}}>
               ❤️
-            </div>
-          </div>
+      </div>
+    </div>
         )}
       </Card>
 
